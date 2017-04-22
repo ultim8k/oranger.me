@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kostas Kapenekakis &bull; IT</title>
+    <meta name="description" content="web developer - IT engineer">
+    <meta name="keywords" lang="en-us" content="Kapenekakis, Kapenekos, Costas, Kostas, Konstantinos, Constantine, ultim8k, oranger, web developer, html5, css3, javascript, standards, linux, unix, node.js, frontend, SEO, IoT, AWS">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAKX/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARERAAAAAAABEREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA/4MAAP+DAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA" rel="shortcut icon" type="image/x-icon" />
+    <link rel="apple-touch-icon-precomposed" href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAKX/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARERAAAAAAABEREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA/4MAAP+DAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA">
+    <meta name="apple-mobile-web-app-title" content="oranger IT">
+    <meta itemprop="name" content="Kostas Kapenekakis &bull; IT">
+    <meta itemprop="description" content="web developer - IT engineer">
+    <meta itemprop="image" content="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAKX/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARERAAAAAAABEREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA/4MAAP+DAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA">
+    <meta name="twitter:site" content="@ultim8k">
+    <meta name="twitter:title" content="Kostas Kapenekakis &bull; IT">
+    <meta name="twitter:description" content="web developer - IT engineer">
+    <meta name="twitter:image" content="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAKX/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARERAAAAAAABEREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA/4MAAP+DAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA">
+    <meta property="og:title" content="Kostas Kapenekakis &bull; IT" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://oranger.me" />
+    <meta property="og:image" content="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAKX/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARERAAAAAAABEREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA/4MAAP+DAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:description" content="web developer - IT engineer" />
+    <meta property="og:site_name" content="oranger IT" />
+    <meta property="fb:admins" content="100000715896000" />
+    <link type="text/plain" rel="author" href="/humans.txt">
+    <style>
+        html { box-sizing: border-box; }
+        body {
+           font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+           font-weight: 300;
+        }
+        *, *:before, *:after {
+            box-sizing: inherit;
+            padding: 0;
+            margin: 0;
+        }
+        .page__section {
+            min-height: 100vh;
+            height: 100%;
+            background-color: white;
+        }
+        .promo {
+            text-align: center;
+            font-family: monospace;
+            font-size: 24px;
+            font-weight: 400;
+            position: relative;
+            top: calc(50vh - 24px * 1.4 / 2);
+        }
+        .promo__text, .promo__cursor {
+            display: inline-block;
+            vertical-align: text-bottom;
+            line-height: 1.4em;
+        }
+        .promo__cursor {
+            width: 16px;
+            height: 1.4em;
+            margin-left: 12px;
+            background-color: orange;
+        }
+        .cursor--blink {
+            animation-delay: 3s;
+            animation-duration: 1s;
+            animation-timing-function: step-start;
+            animation-name: blink;
+            animation-iteration-count: infinite;
+        }
+        .main { position: relative; }
+        .main__info {
+            display: block;
+            max-width: 560px;
+            width: 100%;
+            font-size: 22px;
+            line-height: 1.4em;
+            margin: 0 auto;
+            position: relative;
+            top: calc(50vh - (22px * 1.4 * 3) / 2);
+        }
+        .awesome {
+            padding: 7px;
+            position: absolute;
+            top: 40%;
+            right: 100px;
+            cursor: help;
+        }
+        .awesome:after {
+            content: '';
+            display: block;
+            height: 1px;
+            width: 1px;
+            background-color: orange;
+        }
+        .hide { display: none; }
+        @media screen and (max-width: 600px) {
+            .main__info {
+                text-align: center;
+                padding: 60px 20px;
+                position: static;
+            }
+            .main__info p { margin-bottom: 10px; }
+            .awesome { display: none; }
+        }
+        @media screen and (max-width: 300px) {
+            .promo,
+            .awesome { display: none; }
+            section { height: initial; }
+            .main__info {
+                position: static;
+                padding: 20px;
+                font-size: 16px;
+            }
+        }
+        @keyframes blink {
+            from,
+            to  { background-color: transparent; }
+            50% { background-color: orange; }
+        }
+    </style>
+</head>
+<body>
+    <div class="page__section intro">
+        <div class="promo"><span class="promo__text"># make --awesome</span><span class="promo__cursor cursor--blink"></span></div>
+    </div>
+    <section class="page__section main">
+        <div class="main__info h-card vcard">
+            <h1 class="hide p-name fn">Kostas Kapenekakis</h1>
+            <span class="hide nickname">ultim8k</span>
+            <p>Hi my name is <abbr title="Konstantinos">Kostas</abbr>.</p>
+            <p>I am an <a target="_blank" class="p-job-title role u-url url" href="https://www.linkedin.com/in/ultim8k">IT engineer</a> and I enjoy building <a class="u-url url" target="_blank" href="https://codepen.io/ultim8k/">awesome</a> <a class="u-url url" target="_blank" href="https://github.com/ultim8k">stuff</a>.</p>
+            <p>Contact me on <a rel="nofollow" class="p-tel tel" title="call me&hellip;" href="tel:+447490699418">+44(0)7490699418</a> and <a rel="nofollow" title="mail me&hellip;" href="mailto:i@oranger.me" class="email u-email">i@oranger.me</a></p>
+        </div>
+        <div class="awesome"></div>
+    </section>
+    <script>
+        console.log('Hi there! Welcome to my web home.\nMake yourself comfortable and play :)\nMail me at i@oranger.me or follow me on http://twitter.com/ultim8k');
+        document.querySelector('.awesome').addEventListener('click', function () {
+            alert('Hey there! FYI here\'s my GPG key id: 5E1B307D');
+        });
+    </script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-30193207-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</body>
+</html>
