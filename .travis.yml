@@ -19,6 +19,7 @@ deploy:
   on:
     branch: master
 after_deploy:
+  rm -rf ./dist
   # Allow `awscli` to make requests to CloudFront.
   - aws configure set preview.cloudfront true
   # Invalidate every object in the targeted distribution.

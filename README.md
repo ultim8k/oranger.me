@@ -1,3 +1,3 @@
 # oranger.me
-*My work website*
+*My professional website*
 
