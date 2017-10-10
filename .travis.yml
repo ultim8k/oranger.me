@@ -5,7 +5,7 @@ script:
 - date
 - mkdir dist
 - cp security.txt humans.txt robots.txt ./dist
-- cat index.html | sed 's|UA-XXXXX-Y|$GA_KEY_ID|g' > ./dist/index.html
+- cat index.html | sed 's|UA-XXXXX-Y|'$GA_KEY_ID'|g' > ./dist/index.html
 deploy:
 - provider: s3
   access_key_id: $AWS_ACCESS_KEY_ID
