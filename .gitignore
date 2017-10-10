@@ -41,3 +41,8 @@ Thumbs.db
 #################
 node_modules
 node_modules/*
+
+# this project #
+################
+dist
+dist/*
