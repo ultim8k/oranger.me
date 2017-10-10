@@ -1,0 +1,5 @@
+# Our security address
+Contact: ultimatekonstantinos@gmail.com
+
+# Our PGP key
+Encryption: https://keybase.io/ultim8k/pgp_keys.asc
