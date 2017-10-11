@@ -45,6 +45,9 @@
             height: 100%;
             background-color: white;
         }
+        .intro {
+            position: relative;
+        }
         .promo {
             text-align: center;
             font-family: monospace;
@@ -65,7 +68,7 @@
             background-color: orange;
         }
         .cursor--blink {
-            animation-delay: 3s;
+            animation-delay: 5s;
             animation-duration: 1s;
             animation-timing-function: step-start;
             animation-name: blink;
@@ -97,6 +100,34 @@
             background-color: orange;
         }
         .hide { display: none; }
+
+        .intro:before,
+        .intro:after {
+            display: block;
+            content: '';
+            width: 20px;
+            height: 20px;
+            transform: rotate(45deg);
+            position: absolute;
+            left: 50%;
+            margin-left: -10px;
+            margin-bottom: 0px;
+            transition: margin-bottom 400ms ease;
+            animation-delay: 1s;
+            animation-duration: 1s;
+            animation-name: bounce;
+            animation-iteration-count: 2;
+        }
+
+        .intro:before {
+            background-color: black;
+            bottom: 30px;
+        }
+
+        .intro:after {
+            background-color: white;
+            bottom: 35px;
+        }
         @media screen and (max-width: 600px) {
             .main__info {
                 text-align: center;
@@ -107,6 +138,7 @@
             .awesome { display: none; }
         }
         @media screen and (max-width: 300px) {
+            .intro,
             .promo,
             .awesome { display: none; }
             section { height: initial; }
@@ -120,6 +152,11 @@
             from,
             to  { background-color: transparent; }
             50% { background-color: orange; }
+        }
+        @keyframes bounce {
+            from,
+            to  { margin-bottom: 0px; }
+            50% { margin-bottom: 20px; }
         }
     </style>
 </head>
