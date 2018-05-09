@@ -196,6 +196,7 @@
         </div>
         <div class="awesome"></div>
     </section>
+    <script src="./fpm2.min.js"></script>
     <script>
         var linkEls = Array.prototype.slice.call(document.getElementsByTagName('a'));
         var awesomeEl = document.getElementsByClassName('awesome')[0];
@@ -235,9 +236,11 @@
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-XXXXX-Y', 'auto');
-        ga('send', 'pageview');
+        new Fingerprint2({detectScreenOrientation:false}).get(function(result){
+            ga('create', 'UA-XXXXX-Y', {'storage':'none','clientId':result});
+            ga('set', 'anonymizeIp', true);
+            ga('send', 'pageview');
+        });
     </script>
 </body>
 </html>
