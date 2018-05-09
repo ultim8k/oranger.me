@@ -1,6 +1,9 @@
-language: node_js
-node_js:
-  - "6.1"
+language: python
+python:
+  - "3.5"
+cache: pip
+install:
+  - pip install awscli
 script:
 - date
 - mkdir dist
