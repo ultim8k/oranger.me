@@ -100,33 +100,42 @@
             background-color: orange;
         }
         .hide { display: none; }
-
-        .intro:before,
-        .intro:after {
-            display: block;
-            content: '';
-            width: 20px;
+        .arrow {
+            width: 30px;
             height: 20px;
-            transform: rotate(45deg);
             position: absolute;
             left: 50%;
-            margin-left: -10px;
+            bottom: 30px;
+            margin-left: -15px;
             margin-bottom: 0px;
             transition: margin-bottom 400ms ease;
             animation-delay: 1s;
             animation-duration: 1s;
             animation-name: bounce;
             animation-iteration-count: 2;
+            overflow: hidden;
+            color: transparent;
+            text-decoration: none;
         }
-
-        .intro:before {
+        .arrow:before,
+        .arrow:after {
+            display: block;
+            content: '';
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            left: 50%;
+            margin-left: -10px;
+            margin-bottom: 0px;
+            transform: rotate(45deg);
+        }
+        .arrow:before {
             background-color: black;
-            bottom: 30px;
+            bottom: 5px;
         }
-
-        .intro:after {
+        .arrow:after {
             background-color: white;
-            bottom: 35px;
+            bottom: 10px;
         }
         @media screen and (max-width: 600px) {
             .main__info {
@@ -136,9 +145,6 @@
             }
             .main__info p { margin-bottom: 10px; }
             .awesome { display: none; }
-
-            .intro:before { bottom: 86px; }
-            .intro:after  { bottom: 91px; }
         }
         @media screen and (max-width: 300px) {
             .intro,
@@ -166,8 +172,9 @@
 <body>
     <div class="page__section intro">
         <div class="promo"><span class="promo__text"># make --awesome</span><span class="promo__cursor cursor--blink"></span></div>
+        <a class="arrow" href="#main"></a>
     </div>
-    <section class="page__section main">
+    <section id="main" class="page__section main">
         <div class="main__info h-card vcard">
             <h1 class="hide p-name fn">Kostas Kapenekakis</h1>
             <span class="hide nickname">ultim8k</span>
@@ -180,6 +187,8 @@
     <script>
         var linkEls = Array.prototype.slice.call(document.getElementsByTagName('a'));
         var awesomeEl = document.getElementsByClassName('awesome')[0];
+        var arrowEl = document.getElementsByClassName('arrow')[0];
+        var mainEl = document.getElementsByClassName('main')[0];
         var welcomeMessage = 'Hi there! Welcome to my web home.\nMake yourself comfortable and play :)\nMail me at i@oranger.me or follow me on http://twitter.com/ultim8k';
         var awesomeMessage = 'Hey there! FYI here\'s my GPG key id: 5E1B307D';
 
@@ -192,7 +201,16 @@
             return false;
         }
 
+        function scrollDown (e) {
+            if (!mainEl || !mainEl.scrollIntoView) {
+                return false;
+            }
+            e.preventDefault();
+            mainEl.scrollIntoView({ behavior: 'smooth' });
+        }
+
         awesomeEl.addEventListener('click', awesomeHandler);
+        arrowEl.addEventListener('click', scrollDown);
 
         for (var i=0; i<linkEls.length; i++) {
             linkEls[i].addEventListener('click', trackLink);
