@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kostas Kapenekakis &bull; web developer</title>
-    <meta name="description" content="An IT engineer. Passionate about open source software and open standards. Coffee lover. Epicure. Design fetishist.">
-    <meta name="keywords" lang="en-us" content="Kapenekakis, Kapenekos, Costas, Kostas, Konstantinos, Constantine, ultim8k, oranger, web developer, html5, css3, javascript, standards, linux, unix, node.js, react, frontend, SEO, IoT, AWS">
-    <meta name="apple-mobile-web-app-title" content="Kostas Kapenekakis - web developer">
-    <meta itemprop="name" content="Kostas Kapenekakis &bull; web developer">
-    <meta itemprop="description" content="An IT engineer. Passionate about open source software and open standards. Coffee lover. Epicure. Design fetishist.">
-    <meta name="twitter:site" content="@ultim8k">
-    <meta name="twitter:title" content="Kostas Kapenekakis &bull; web developer">
+    <meta name="description" content="An IT engineer. Passionate about open source software and open standards. Coffee lover. Epicure. Design fetishist." />
+    <meta name="keywords" lang="en-us" content="Kapenekakis, Kapenekos, Costas, Kostas, Konstantinos, Constantine, ultim8k, oranger, web developer, html5, css3, javascript, standards, linux, unix, node.js, react, frontend, SEO, IoT, AWS" />
+    <meta name="apple-mobile-web-app-title" content="Kostas Kapenekakis - web developer" />
+    <meta itemprop="name" content="Kostas Kapenekakis &bull; web developer" />
+    <meta itemprop="description" content="An IT engineer. Passionate about open source software and open standards. Coffee lover. Epicure. Design fetishist." />
+    <meta name="twitter:site" content="@ultim8k" />
+    <meta name="twitter:title" content="Kostas Kapenekakis &bull; web developer" />
     <meta name="twitter:description" content="An IT engineer. Passionate about open source software and open standards. Coffee lover. Epicure. Design fetishist.">
     <meta property="og:title" content="Kostas Kapenekakis &bull; web developer" />
     <meta property="og:type" content="website" />
@@ -21,8 +21,9 @@
     <meta property="og:description" content="An IT engineer. Passionate about open source software and open standards. Coffee lover. Epicure. Design fetishist." />
     <meta property="og:site_name" content="oranger IT" />
     <meta property="fb:admins" content="100000715896000" />
-    <link type="text/plain" rel="author" href="/humans.txt">
-    <meta name="theme-color" content="#ffa500">
+    <link type="text/plain" rel="author" href="/humans.txt" />
+    <meta name="theme-color" content="#ffa500" />
+    <link rel="manifest" href="/manifest.json" />
     <link rel="shortcut icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAKX/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARERAAAAAAABEREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA/4MAAP+DAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA" />
     <link rel="apple-touch-icon-precomposed" href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAKX/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARERAAAAAAABEREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA/4MAAP+DAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA" />
     <meta itemprop="image" content="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAKX/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARERAAAAAAABEREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA/4MAAP+DAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA" />
@@ -205,16 +206,16 @@
         var welcomeMessage = 'Hi there! Welcome to my web home.\nMake yourself comfortable and play :)\nMail me at i@oranger.me or follow me on http://twitter.com/ultim8k';
         var awesomeMessage = 'Hey there! FYI here\'s my GPG key id: 5E1B307D';
 
-        function awesomeHandler () {
+        function awesomeHandler() {
             alert(awesomeMessage);
         }
 
-        function trackLink (e) {
+        function trackLink(e) {
             ga('send', 'event', 'Link', 'Click', e.target.href);
             return false;
         }
 
-        function scrollDown (e) {
+        function scrollDown(e) {
             if (!mainEl || !mainEl.scrollIntoView) {
                 return false;
             }
@@ -222,11 +223,19 @@
             mainEl.scrollIntoView({ behavior: 'smooth' });
         }
 
+        function loadServiceWorker() {
+            navigator.serviceWorker.register('/service-worker.js');
+        };
+
         awesomeEl.addEventListener('click', awesomeHandler);
         arrowEl.addEventListener('click', scrollDown);
 
         for (var i=0; i<linkEls.length; i++) {
             linkEls[i].addEventListener('click', trackLink);
+        }
+
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', loadServiceWorker);
         }
 
         console.log(welcomeMessage);

@@ -1,0 +1,22 @@
+{
+  "name": "Kostas Kapenekakis &bull; web developer",
+  "lang": "en-US",
+  "short_name": "Kostas Kapenekakis",
+  "start_url": "/index.html?source=manifest",
+  "display": "minimal-ui",
+  "theme_color": "#ffa500",
+  "background_color": "#fff",
+  "description": "An IT engineer. Passionate about open source software and open standards. Coffee lover. Epicure. Design fetishist.",
+  "icons": [
+    {
+      "src": "data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAKX/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARERAAAAAAABEREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA/4MAAP+DAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA",
+      "sizes": "16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ]
+}
