@@ -5,10 +5,11 @@ cache: pip
 install:
   - pip install awscli
 script:
-- date
+- TODAY=date
+- echo $TODAY
 - mkdir dist
-- cp security.txt humans.txt robots.txt fpm2.min.js service-worker.js manifest.json icon.png ./dist
-- cat index.html | sed 's|UA-XXXXX-Y|'$GA_KEY_ID'|g' > ./dist/index.html
+- cp security.txt humans.txt robots.txt service-worker.js manifest.json icon.png ./dist
+- cat index.html | sed 's|__UPDATED_AT__|'$TODAY'|g' > ./dist/index.html
 deploy:
 - provider: s3
   access_key_id: $AWS_ACCESS_KEY_ID

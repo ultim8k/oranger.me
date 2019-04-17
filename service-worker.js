@@ -1,6 +1,6 @@
-var cacheName = "oranger-sw-v1";
+var cacheName = "oranger-sw-v2";
 
-var urlsToCache = ["/", "/fpm2.min.js", "/icon.png"];
+var urlsToCache = ["/", "/icon.png"];
 
 function handleInstall(event) {
   // Perform install steps
