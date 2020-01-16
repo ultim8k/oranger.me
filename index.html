@@ -1,236 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kostas Kapenekakis &bull; web developer</title>
-    <meta name="description" content="An IT engineer. Passionate about open source software and open standards. Coffee lover. Epicure. Design fetishist." />
-    <meta name="keywords" lang="en-us" content="Kapenekakis, Kapenekos, Costas, Kostas, Konstantinos, Constantine, ultim8k, oranger, web developer, html5, css3, javascript, standards, linux, unix, node.js, react, frontend, SEO, IoT, AWS" />
-    <meta name="apple-mobile-web-app-title" content="Kostas Kapenekakis - web developer" />
-    <meta itemprop="name" content="Kostas Kapenekakis &bull; web developer" />
-    <meta itemprop="description" content="An IT engineer. Passionate about open source software and open standards. Coffee lover. Epicure. Design fetishist." />
-    <meta name="twitter:site" content="@ultim8k" />
-    <meta name="twitter:title" content="Kostas Kapenekakis &bull; web developer" />
-    <meta name="twitter:description" content="An IT engineer. Passionate about open source software and open standards. Coffee lover. Epicure. Design fetishist.">
-    <meta property="og:title" content="Kostas Kapenekakis &bull; web developer" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://oranger.me" />
-    <meta property="og:image:width" content="300" />
-    <meta property="og:image:height" content="300" />
-    <meta property="og:description" content="An IT engineer. Passionate about open source software and open standards. Coffee lover. Epicure. Design fetishist." />
-    <meta property="og:site_name" content="oranger IT" />
-    <meta property="fb:admins" content="100000715896000" />
-    <link type="text/plain" rel="author" href="/humans.txt" />
-    <meta name="theme-color" content="#ffa500" />
-    <link rel="manifest" href="/manifest.json" />
-    <link rel="shortcut icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAKX/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARERAAAAAAABEREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA/4MAAP+DAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA" />
-    <link rel="apple-touch-icon-precomposed" href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAKX/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARERAAAAAAABEREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA/4MAAP+DAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA" />
-    <meta itemprop="image" content="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAKX/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARERAAAAAAABEREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA/4MAAP+DAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA" />
-    <meta name="twitter:image" content="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAKX/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARERAAAAAAABEREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA/4MAAP+DAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA" />
-    <meta property="og:image" content="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAKX/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARERAAAAAAABEREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA/4MAAP+DAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA" />
-    <style>
-        html { box-sizing: border-box; }
-        body {
-           font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-           font-weight: 300;
-        }
-        *, *:before, *:after {
-            box-sizing: inherit;
-            padding: 0;
-            margin: 0;
-        }
-        h1 { color: orange; }
-        a, abbr {
-            color: black;
-            text-decoration-color: orange;
-        }
-        a:hover {
-            color: orange;
-            text-decoration: none;
-        }
-        abbr:hover {
-            text-decoration: none;
-            cursor: help;
-        }
-        .page__section {
-            min-height: 100vh;
-            height: 100%;
-            background-color: white;
-        }
-        .intro {
-            position: relative;
-        }
-        .promo {
-            text-align: center;
-            font-family: monospace;
-            font-size: 24px;
-            font-weight: 400;
-            position: relative;
-            top: calc(50vh - 24px * 1.4 / 2);
-        }
-        .promo__text, .promo__cursor {
-            display: inline-block;
-            vertical-align: text-bottom;
-            line-height: 1.4em;
-        }
-        .promo__cursor {
-            width: 16px;
-            height: 1.4em;
-            margin-left: 12px;
-            background-color: orange;
-        }
-        .cursor--blink {
-            animation-delay: 5s;
-            animation-duration: 1s;
-            animation-timing-function: step-start;
-            animation-name: blink;
-            animation-iteration-count: infinite;
-        }
-        .main { position: relative; }
-        .main__info {
-            display: block;
-            max-width: 560px;
-            width: 100%;
-            font-size: 22px;
-            line-height: 1.4em;
-            margin: 0 auto;
-            position: relative;
-            top: calc(50vh - (22px * 1.4 * 3) / 2);
-        }
-        .awesome {
-            padding: 7px;
-            position: absolute;
-            top: 40%;
-            right: 100px;
-            cursor: help;
-        }
-        .awesome:after {
-            content: '';
-            display: block;
-            height: 1px;
-            width: 1px;
-            background-color: orange;
-        }
-        .hide { display: none; }
-        .arrow {
-            width: 30px;
-            height: 20px;
-            position: absolute;
-            left: 50%;
-            bottom: 30px;
-            margin-left: -15px;
-            margin-bottom: 0px;
-            transition: margin-bottom 400ms ease;
-            animation-delay: 1s;
-            animation-duration: 1s;
-            animation-name: bounce;
-            animation-iteration-count: 2;
-            overflow: hidden;
-            color: transparent;
-            text-decoration: none;
-        }
-        .arrow:before,
-        .arrow:after {
-            display: block;
-            content: '';
-            width: 20px;
-            height: 20px;
-            position: absolute;
-            left: 50%;
-            margin-left: -10px;
-            margin-bottom: 0px;
-            transform: rotate(45deg);
-        }
-        .arrow:before {
-            background-color: black;
-            bottom: 5px;
-        }
-        .arrow:after {
-            background-color: white;
-            bottom: 10px;
-        }
-        @media screen and (max-width: 600px) {
-            .main__info {
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kostas Kapenekakis &bull; web developer</title>
+        <meta name="description"content="An IT engineer. Passionate about open source software and open standards. Coffee lover. Epicure. Design fetishist." />
+        <meta name="keywords"lang="en-us"content="Kapenekakis, Kapenekos, Costas, Kostas, Konstantinos, Constantine, ultim8k, oranger, web developer, html5, css3, JavaScript, TypeScript, standards, Linux, Unix, Node.js, React, frontend, SEO, IoT, AWS" />
+        <meta name="apple-mobile-web-app-title"content="Kostas Kapenekakis - web developer" />
+        <meta itemprop="name"content="Kostas Kapenekakis &bull; web developer" />
+        <meta itemprop="description"content="An IT engineer. Passionate about open source software and open standards. Coffee lover. Epicure. Design fetishist." />
+        <meta name="twitter:site" content="@ultim8k" />
+        <meta name="twitter:title"content="Kostas Kapenekakis &bull; web developer" />
+        <meta name="twitter:description"content="An IT engineer. Passionate about open source software and open standards. Coffee lover. Epicure. Design fetishist." />
+        <meta property="og:title"content="Kostas Kapenekakis &bull; web developer" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://oranger.me" />
+        <meta property="og:image:width" content="300" />
+        <meta property="og:image:height" content="300" />
+        <meta property="og:description"content="An IT engineer. Passionate about open source software and open standards. Coffee lover. Epicure. Design fetishist." />
+        <meta property="og:site_name" content="oranger IT" />
+        <meta property="fb:admins" content="100000715896000" />
+        <link type="text/plain" rel="author" href="/humans.txt" />
+        <meta name="theme-color" content="#ffa500" />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="shortcut icon"type="image/x-icon"href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAKX/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARERAAAAAAABEREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA/4MAAP+DAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA" />
+        <link rel="apple-touch-icon-precomposed"href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAKX/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARERAAAAAAABEREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA/4MAAP+DAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA" />
+        <meta itemprop="image"content="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAKX/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARERAAAAAAABEREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA/4MAAP+DAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA" />
+        <meta name="twitter:image"content="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAKX/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARERAAAAAAABEREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA/4MAAP+DAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA" />
+        <meta property="og:image"content="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAKX/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARERAAAAAAABEREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA/4MAAP+DAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA" />
+        <style>
+            html { box-sizing: border-box; }
+            body {
+                font-family: "HelveticaNeue-Light", "Helvetica Neue Light",
+                    "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-weight: 300;
+            }
+            *,
+            *:before,
+            *:after {
+                box-sizing: inherit;
+                padding: 0;
+                margin: 0;
+            }
+            h1 { color: orange; }
+            a,
+            abbr { color: black; text-decoration-color: orange; }
+            a:hover { color: orange; text-decoration: none; }
+            abbr:hover { text-decoration: none; cursor: help; }
+            .page__section {
+                min-height: 100vh;
+                height: 100%;
+                background-color: white;
+            }
+            .intro { position: relative; }
+            .promo {
                 text-align: center;
-                padding: 60px 20px;
-                position: static;
+                font-family: monospace;
+                font-size: 24px;
+                font-weight: 400;
+                position: relative;
+                top: calc(50vh - 24px * 1.4 / 2);
             }
-            .main__info p { margin-bottom: 10px; }
-            .awesome { display: none; }
-        }
-        @media screen and (max-width: 300px) {
-            .intro,
-            .promo,
-            .awesome { display: none; }
-            section { height: initial; }
+            .promo__text,
+            .promo__cursor {
+                display: inline-block;
+                vertical-align: text-bottom;
+                line-height: 1.4em;
+            }
+            .promo__cursor {
+                width: 16px;
+                height: 1.4em;
+                margin-left: 12px;
+                background-color: orange;
+            }
+            .cursor--blink {
+                animation-delay: 5s;
+                animation-duration: 1s;
+                animation-timing-function: step-start;
+                animation-name: blink;
+                animation-iteration-count: infinite;
+            }
+            .main { position: relative; }
             .main__info {
-                position: static;
-                padding: 20px;
-                font-size: 16px;
+                display: block;
+                max-width: 560px;
+                width: 100%;
+                font-size: 22px;
+                line-height: 1.4em;
+                margin: 0 auto;
+                position: relative;
+                top: calc(50vh - (22px * 1.4 * 3) / 2);
             }
-        }
-        @keyframes blink {
-            from,
-            to  { background-color: transparent; }
-            50% { background-color: orange; }
-        }
-        @keyframes bounce {
-            from,
-            to  { margin-bottom: 0px; }
-            50% { margin-bottom: 20px; }
-        }
-    </style>
-</head>
-<body>
-    <div class="page__section intro">
-        <div class="promo"><span class="promo__text"># make --awesome</span><span class="promo__cursor cursor--blink"></span></div>
-        <a class="arrow" title="Scroll to bottom" href="#main"></a>
-    </div>
-    <section id="main" class="page__section main">
-        <div class="main__info h-card vcard">
-            <h1 class="hide p-name fn" aria-hidden="true">Kostas Kapenekakis</h1>
-            <span class="hide nickname">ultim8k</span>
-            <p>Hi there, my name is <abbr title="Konstantinos">Kostas</abbr>.</p>
-            <p>I am an <a class="p-job-title role u-url url" target="_blank" rel="noopener" href="https://www.linkedin.com/in/ultim8k">IT engineer</a> and I enjoy building <a class="u-url url" target="_blank" rel="noopener" href="https://codepen.io/ultim8k/">awesome</a> <a class="u-url url" target="_blank" rel="noopener" href="https://github.com/ultim8k">stuff</a>.</p>
-            <p>Contact me on <a rel="nofollow" class="p-tel tel" title="call me&hellip;" href="tel:+447490699418">+44(0)7490699418</a> and <a rel="nofollow" title="mail me&hellip;" href="mailto:i@oranger.me" class="email u-email">i@oranger.me</a></p>
+            .awesome {
+                padding: 7px;
+                position: absolute;
+                top: 40%;
+                right: 100px;
+                cursor: help;
+            }
+            .awesome:after {
+                content: "";
+                display: block;
+                height: 1px;
+                width: 1px;
+                background-color: orange;
+            }
+            .hide { display: none; }
+            .arrow {
+                width: 30px;
+                height: 20px;
+                position: absolute;
+                left: 50%;
+                bottom: 30px;
+                margin-left: -15px;
+                margin-bottom: 0px;
+                transition: margin-bottom 400ms ease;
+                animation-delay: 1s;
+                animation-duration: 1s;
+                animation-name: bounce;
+                animation-iteration-count: 2;
+                overflow: hidden;
+                color: transparent;
+                text-decoration: none;
+            }
+            .arrow:before,
+            .arrow:after {
+                display: block;
+                content: "";
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                left: 50%;
+                margin-left: -10px;
+                margin-bottom: 0px;
+                transform: rotate(45deg);
+            }
+            .arrow:before { background-color: black; bottom: 5px; }
+            .arrow:after { background-color: white; bottom: 10px; }
+            @media screen and (max-width: 600px) {
+                .main__info {
+                    text-align: center;
+                    padding: 60px 20px;
+                    position: static;
+                }
+                .main__info p { margin-bottom: 10px; }
+                .awesome { display: none; }
+            }
+            @media screen and (max-width: 300px) {
+                .intro,
+                .promo,
+                .awesome { display: none; }
+                section { height: initial; }
+                .main__info {
+                    position: static;
+                    padding: 20px;
+                    font-size: 16px;
+                }
+            }
+            @media (prefers-color-scheme: dark) {
+                body,
+                a,
+                abbr { color: white; }
+                .page__section { background-color: #424242; }
+                .arrow:after   { background-color: #424242; }
+            }
+            @keyframes blink {
+                from,
+                to  { background-color: transparent; }
+                50% { background-color: orange; }
+            }
+            @keyframes bounce {
+                from,
+                to  { margin-bottom: 0px; }
+                50% { margin-bottom: 20px; }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="page__section intro">
+            <div class="promo">
+                <span class="promo__text"># make --awesome</span
+                ><span class="promo__cursor cursor--blink"></span>
+            </div>
+            <a class="arrow" title="Scroll to bottom" href="#main"></a>
         </div>
-        <div class="awesome"></div>
-    </section>
-    <script>
-        var awesomeEl = document.getElementsByClassName('awesome')[0];
-        var arrowEl = document.getElementsByClassName('arrow')[0];
-        var mainEl = document.getElementsByClassName('main')[0];
-        var welcomeMessage = 'Hi there! Welcome to my web home.\nMake yourself comfortable and play :)\nMail me at i@oranger.me or follow me on http://twitter.com/ultim8k';
-        var awesomeMessage = 'Hey there! FYI here\'s my GPG key id: 5E1B307D';
-
-        function awesomeHandler() {
-            alert(awesomeMessage);
-        }
+        <section id="main" class="page__section main">
+            <div class="main__info h-card vcard">
+                <h1 class="hide p-name fn" aria-hidden="true">
+                    Kostas Kapenekakis
+                </h1>
+                <span class="hide nickname">ultim8k</span>
+                <p>
+                    Hi there, my name is
+                    <abbr title="Konstantinos">Kostas</abbr>.
+                </p>
+                <p>
+                    I am a
+                    <a
+                        class="p-job-title role u-url url"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.linkedin.com/in/ultim8k"
+                        >software engineer</a
+                    >
+                    and I enjoy building
+                    <a
+                        class="u-url url"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://codepen.io/ultim8k"
+                        >some</a
+                    >
+                    <a
+                        class="u-url url"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://codesandbox.io/u/ultim8k"
+                        >awesome</a
+                    >
+                    <a
+                        class="u-url url"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://github.com/ultim8k"
+                        >stuff</a
+                    >.
+                </p>
+                <p>
+                    Contact me at
+                    <a
+                        rel="nofollow"
+                        class="p-tel tel"
+                        title="call me&hellip;"
+                        href="tel:+447490699418"
+                        >+447490699418</a
+                    >
+                    and
+                    <a
+                        rel="nofollow"
+                        title="mail me&hellip;"
+                        href="mailto:i@oranger.me"
+                        class="email u-email"
+                        >i@oranger.me</a
+                    >
+                </p>
+            </div>
+            <div class="awesome"></div>
+        </section>
+        <script>
             var lastUpdated = "__UPDATED_AT__";
+            var awesomeEl = document.getElementsByClassName("awesome")[0];
+            var arrowEl = document.getElementsByClassName("arrow")[0];
+            var mainEl = document.getElementsByClassName("main")[0];
+            var welcomeMessage =
+                "Hi there! Welcome to my web home.\nMake yourself comfortable and play :)\nMail me at i@oranger.me or follow me on http://twitter.com/ultim8k";
+            var awesomeMessage =
+                "Hey there! FYI here's my GPG key id: 5E1B307D";
 
-
-        function scrollDown(e) {
-            if (!mainEl || !mainEl.scrollIntoView) {
-                return false;
+            function awesomeHandler() {
+                alert(awesomeMessage);
             }
-            e.preventDefault();
-            mainEl.scrollIntoView({ behavior: 'smooth' });
-        }
 
-        function loadServiceWorker() {
-            navigator.serviceWorker.register('/service-worker.js');
-        };
+            function scrollDown(e) {
+                if (!mainEl || !mainEl.scrollIntoView) {
+                    return false;
+                }
+                e.preventDefault();
+                mainEl.scrollIntoView({ behavior: "smooth" });
+            }
 
-        awesomeEl.addEventListener('click', awesomeHandler);
-        arrowEl.addEventListener('click', scrollDown);
+            function loadServiceWorker() {
+                navigator.serviceWorker.register("/service-worker.js");
+            }
 
+            awesomeEl.addEventListener("click", awesomeHandler);
+            arrowEl.addEventListener("click", scrollDown);
 
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', loadServiceWorker);
-        }
+            if ("serviceWorker" in navigator) {
+                window.addEventListener("load", loadServiceWorker);
+            }
 
-        console.log(welcomeMessage);
-    </script>
-</body>
+            console.log(welcomeMessage);
+        </script>
+    </body>
 </html>
